@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <h1>Generate Bill</h1>
+
+            <label>Select Customer</label>
+            <br>
+            <select id="customerSelect"></select>
+            <br><br>
+
+            <label>From</label>
+            <br>
+            <input type="date" id="startDate">
+            <br>
+
+            <label>To</label>
+            <input type="date" id="endDate">
+            <br><br>
+
+
+            <button onclick="fetchBill()">Get BILL</button>
+
+            <div id="billContainer"></div>
+        
+        </div>
+
+        <script src="script.js"></script>
+        <script>
+            loadCustomersDropdown();
+        </script>
+
+    </body>
+</html>

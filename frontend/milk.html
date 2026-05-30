@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Add Milk Entry</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <h1>Add Milk Entry</h1>
+
+            <!--Customer Dropdown-->
+            <label>Select Customer</label>
+
+            <br>
+
+            <select id="customerSelect"></select>
+
+            <br><br>
+
+            <label>Date</label>
+            <br>
+
+            <input type="date" id="date">
+            <br><br>
+
+            <label>Quantity</label>
+            <br>
+
+            <input type="number" id="quantity" placeholder="enter quantity">
+            <br><br>
+
+
+            <label>Rate</label>
+            <br>
+
+            <input type="number" id="rate" placeholder="enter rate">
+            <br><br>
+
+
+            <!--Submit Button-->
+            <button onclick="addMilk()">Add Milk</button>
+        
+        </div>
+
+        <script src="script.js"></script>
+        <script>
+            loadCustomersDropdown();
+        </script>
+
+
+    </body>
+</html>

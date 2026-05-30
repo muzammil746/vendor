@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Payment Management</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Payment Management</h1>
+
+        <!-- Shared Customer Selection -->
+
+        <div class="paymentContainer">
+
+            <label>Select Customer</label>
+
+            <br>
+
+            <select id="customerSelect"></select>
+
+        </div>
+
+        <!-- Add Payment Section -->
+
+        <div class="paymentContainer">
+
+            <h2>Add Payment</h2>
+
+            <label>Date</label>
+
+            <br>
+
+            <input type="date" id="date">
+
+            <br><br>
+
+            <label>Amount</label>
+
+            <br>
+
+            <input
+                type="number"
+                id="amount"
+                placeholder="Enter amount"
+            >
+
+            <br><br>
+
+            <button onclick="addPayment()">
+
+                Add Payment
+
+            </button>
+
+        </div>
+
+
+        <!-- Fetch Payments Section -->
+
+        <div class="paymentContainer">
+
+            <h2>Fetch Payments</h2>
+
+            <label>From</label>
+
+            <br>
+
+            <input type="date" id="startDate">
+
+            <br><br>
+
+            <label>To</label>
+
+            <br>
+
+            <input type="date" id="endDate">
+
+            <br><br>
+
+            <button onclick="fetchPayments()">
+
+                Fetch Payments
+
+            </button>
+
+        </div>
+
+        <!-- Payment Report Renders Here -->
+
+        <div
+            id="paymentContainer"
+            class="paymentContainer"
+        >
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+    <script>
+
+        loadCustomersDropdown();
+
+    </script>
+
+</body>
+
+</html>
+
+
+        
+
+        

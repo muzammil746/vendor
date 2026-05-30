@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <h1>Customer Management</h1>
+
+            <div class="form-card">
+
+                <label>Add Customer</label>
+                <br>
+
+                <input
+                    type="text"
+                    id="add_customer"
+                    placeholder="Add customer"
+                >
+
+                <br><br>
+
+                <label>Add phone number</label>
+                <br>
+
+                <input
+                    type="text"
+                    id="add_number"
+                    placeholder="Add number"
+                >
+
+                <br><br>
+
+                <button onclick="addCustomer()">
+                    Add Customer
+                </button>
+
+            </div>
+
+
+            <div class="form-card">
+
+                <label>Delete Customer</label>
+
+                <br>
+
+                <select id="customerSelect"></select>
+
+                <br><br>
+
+                <button onclick="deleteCustomer()">
+                    Delete Customer
+                </button>
+
+            </div>
+
+        </div>
+
+        <script src="script.js"></script>
+
+        <script>
+            loadCustomersDropdown();
+        </script>
+
+    </body>
+</html>
