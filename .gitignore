@@ -1,12 +1,14 @@
-# Dependencies
-node_modules/backend/node_modules/
+# Root dependencies
+node_modules/
+
+# Backend dependencies
+backend/node_modules/
 
 # Environment variables
 backend/.env
 
-#Logs
-*.log 
+# Logs
+*.log
 
-# OS files
-.DS_Store
-Thumbs.db
+tempCodeRunnerFile.js
+*.log
